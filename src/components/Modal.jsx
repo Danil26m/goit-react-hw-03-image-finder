@@ -14,8 +14,9 @@ export class Modal extends Component {
        }
     }
     componentDidMount(){
+   
         window.addEventListener('keydown',this.close);
-        window.addEventListener('click',this.clickClose)
+        document.querySelector('.Overlay').addEventListener('click',this.clickClose)
     }
     componentWillUnmount(){
         window.removeEventListener('keydown',this.close);
