@@ -14,7 +14,7 @@ export class ImageGallery extends Component {
         filter: '',
     }
     handelClick=()=>{
-        this.setState({page: this.state.page + 1 })
+        this.setState((prev)=>({page: prev.page + 1}))
       }
       handelForm=(event)=>{
         event.preventDefault();
