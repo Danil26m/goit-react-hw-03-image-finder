@@ -1,5 +1,4 @@
 import Button from 'components/Button/Button'
-import PropTypes from 'prop-types'
 import { Audio } from 'react-loader-spinner'
 import React, { Component } from 'react'
 import Modal from '../Modal'
@@ -88,8 +87,5 @@ export class ImageGallery extends Component {
        
     )
   }
-}
-ImageGallery.propTypes={
-  name: PropTypes.string.isRequired
 }
 export default ImageGallery;
